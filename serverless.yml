@@ -1,0 +1,20 @@
+service: numpy-test-sls
+app: numpy-test-sls
+org: shirishkz
+
+provider:
+  name: aws
+  runtime: python3.7
+  stage: dev
+  region: us-east-1
+
+functions:
+  numpy:
+    handler: handler.main
+    
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux
