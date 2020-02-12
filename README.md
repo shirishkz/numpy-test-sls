@@ -22,6 +22,9 @@ or
 
 pipenv install
 
+# Configure serverless.yml
+serverless.yml
+
 # Compiling for Serverless development
 sls deploy
 
