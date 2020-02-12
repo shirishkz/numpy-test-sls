@@ -9,6 +9,6 @@
   "author": "Shirish Kayastha",
   "license": "MIT",
   "dependencies": {
-    "serverless-python-requirements": "^5.0.0"
+    "serverless-python-requirements": "^5.0.1"
   }
 }
