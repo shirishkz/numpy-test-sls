@@ -1,12 +1,12 @@
-service: numpy-test-sls
-app: numpy-test-sls
-org: shirishkz
+service: [Default service]
+app: [Default app]
+org: [Default org]
 
 provider:
   name: aws
   runtime: python3.7
   stage: dev
-  region: us-east-1
+  region: [Default region]
 
 functions:
   numpy:
