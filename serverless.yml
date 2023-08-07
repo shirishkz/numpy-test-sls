@@ -1,20 +1,31 @@
-service: [Default service]
-app: [Default app]
-org: [Default org]
+service: [Set service]
+app: [Set app]
+org: [Set org]
+
+frameworkVersion: "3"
 
 provider:
   name: aws
-  runtime: python3.7
+  runtime: python3.10
   stage: dev
-  region: [Default region]
+  region: [Set region]
+
+package:
+  individually: false
 
 functions:
   numpy:
     handler: handler.main
-    
+
 plugins:
   - serverless-python-requirements
 
 custom:
   pythonRequirements:
     dockerizePip: non-linux
+    zip: false
+    slim: true
+    strip: false
+    invalidateCaches: true
+
+configValidationMode: warn
