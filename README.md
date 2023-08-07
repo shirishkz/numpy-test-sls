@@ -4,11 +4,11 @@ Testing NumPy and Python packaging for AWS Lambda
 
 ## Prerequisites
 
-- Node version: 12.16.0
+- Node version: 18.x.x
 
-- Python version: 3.7.6
+- Python version: 3.10.x
 
-- Serverless version: 1.63.0
+- Serverless version: 3.x.x
 
 - Lint: PyLint w/ Black
 
@@ -18,15 +18,14 @@ Testing NumPy and Python packaging for AWS Lambda
 # Install dependencies
 pip3 install -r requirements.txt
 
-or
-
+# or install with pipenv==2023.7.4
 pipenv install
 
 # Configure serverless.yml
 serverless.yml
 
 # Compiling for Serverless development
-sls deploy
+serverless deploy --verbose
 
 # Run your tests
 pytest
